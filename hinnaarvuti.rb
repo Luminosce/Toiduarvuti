@@ -23,6 +23,10 @@ def input_is_numeric?(input)
   input.to_i.to_s == input # returns true if input contains only digits
 end
 
+# def input_is_numeric?(input)
+#   input.is_a? Integer
+# end
+
 def current_add_list()
   $display_to_add.each do |element|
     puts(element)
@@ -108,7 +112,7 @@ while loop == true do
 
   if reset_entered == false && calculate_entered == false && delete_entered == false
     $all_recipes.each do |recipe|
-      if (input.include?("1") || input.include?("2") || input.include?("3")) || input.include?("4")) && recipe.name.downcase.include?(input)
+      if (input.include?("1") || input.include?("2") || input.include?("3") || input.include?("4")) && recipe.name.downcase.include?(input)
         $recipes_to_add.push(recipe)
         $display_to_add.push(recipe.name)
         puts("")
