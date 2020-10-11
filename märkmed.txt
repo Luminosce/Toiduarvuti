@@ -1,0 +1,44 @@
+﻿
+#
+# Koguse-kaalu andmed:
+#
+# 1 sl vedelikku (sh õli) = 5 g
+# küüslaugu küüs = 2 g
+# 1 tl jahvatatud vürtse = 2 g
+# 1 tl kuivatatud vürtse = 1 g
+# 1 sellerivars = 50 g
+# 1 porrulauk = 350 g
+# paprika = 200 g
+# apelsin = 200 g
+# kartul = 150 g
+# sibul = 150 g
+# 1 tl maitsepastat = 10 g
+# punane sibul = 100 g
+# tomat = 150 g
+# avokaado = 150 g
+# porgand = 120 g
+# paikesekuivatatud_tomat = 10 g
+# norileht = 2.8 g
+# rohelise sibula punt = 15 g
+# 1 sl = 1 tl;
+# 1 dl basmati riisi = 75 g
+# 1 dl odrakruupe = 100 g
+# 1 sl võid = 15 g
+# sidrun = 120 g
+# ingverijupp = 10 g
+# 1 sl suhkrut = 8 g
+# 1 sl kappareid = 5 g
+# 1 sl seesamiseemneid = 5 g
+# 1 sl maitsepärmi = 1 g
+# 1 puljongikuubik = 10 g (pakis 12 tk)
+# 1 muna = ... g
+# 1 lasanjeplaat = 15 g
+
+# old single rough match code:
+
+if ingredient.name.downcase.include?(input) && included_in_ingredients == false
+  $ingredients_to_add.push(ingredient)
+  $display_to_add.push(ingredient.name)
+  puts("Rough match found: '#{ingredient.name}' in ingredients. Added to calculation.'")
+  included_in_ingredients = true
+end
