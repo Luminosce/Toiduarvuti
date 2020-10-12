@@ -16,11 +16,6 @@ $recipes_to_add = []
 $ingredient_quantities = []
 $display_to_add = []
 
-def input_is_numeric?(input)
-  # returns true if input contains only digits
-  true if Integer(input) rescue false
-end
-
 def current_add_list()
   $display_to_add.each do |element|
     puts(element)
