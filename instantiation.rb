@@ -1,4 +1,4 @@
-require_relative 'meth_class.rb'
+require_relative 'modules.rb'
 
 # all ingredients:
 
