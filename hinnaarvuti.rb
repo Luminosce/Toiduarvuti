@@ -23,10 +23,6 @@ def input_is_numeric?(input)
   input.to_i.to_s == input # returns true if input contains only digits
 end
 
-# def input_is_numeric?(input)
-#   input.is_a? Integer
-# end
-
 def current_add_list()
   $display_to_add.each do |element|
     puts(element)
