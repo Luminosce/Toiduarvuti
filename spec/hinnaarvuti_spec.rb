@@ -10,7 +10,7 @@ describe('input_is_numeric?') do
   end
 
   it 'returns false if input is empty' do
-    expect(input_is_numeric?('1s4')).to eq(false)
+    expect(input_is_numeric?('')).to eq(false)
   end
 
   it 'returns ...if input can be deserialized into a negative number' do
