@@ -16,13 +16,6 @@ $recipes_to_add = []
 $ingredient_quantities = []
 $display_to_add = []
 
-def input_is_numeric?(input)
-  if input == ''
-    return false
-  end
-  input.to_i.to_s == input # returns true if input contains only digits
-end
-
 def current_add_list()
   $display_to_add.each do |element|
     puts(element)
