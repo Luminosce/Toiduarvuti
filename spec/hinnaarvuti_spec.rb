@@ -13,7 +13,11 @@ describe('input_is_numeric?') do
     expect(input_is_numeric?('')).to eq(false)
   end
 
-  it 'returns ...if input can be deserialized into a negative number' do
-    # not implemented
+  it 'returns false if input is zero' do
+    expect(input_is_numeric?('0')).to eq(false)
+  end
+
+  it 'returns false if input can be deserialized into a negative number' do
+    expect(input_is_numeric?('-88')).to eq(false)
   end
 end

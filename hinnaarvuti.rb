@@ -1,4 +1,5 @@
 require_relative 'instantiation.rb'
+require_relative 'utils.rb'
 require 'colorize'
 
 all_recipe_names = []
